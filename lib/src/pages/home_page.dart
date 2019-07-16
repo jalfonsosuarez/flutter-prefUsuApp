@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:prefusuapp/src/widgets/menu_widget.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text( 'Preferencias de usuario'),
       ),
+      drawer: MenuWidget(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -25,4 +27,6 @@ class HomePage extends StatelessWidget {
       )
     );
   }
+
+
 }
